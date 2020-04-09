@@ -1,0 +1,31 @@
+env:
+  browser: true
+  es6: true
+  node: true
+extends:
+  - 'plugin:react/recommended'
+  - google
+  - plugin:@typescript-eslint/recommended
+  - prettier
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - react
+  - '@typescript-eslint'
+  - prettier
+rules:
+  valid-jsdoc: 0
+  react/prop-types: off
+  '@typescript-eslint/explicit-function-return-type': off
+  '@typescript-eslint/interface-name-prefix':
+    - error
+    - prefixWithI: 'always'
+  prettier/prettier:
+    - error
