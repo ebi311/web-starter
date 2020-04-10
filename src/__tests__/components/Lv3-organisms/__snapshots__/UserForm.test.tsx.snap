@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserForm success 1`] = `
+<div
+  className="sc-AxgMl fFPQpl"
+>
+  <Styled(LabeledTetBox)
+    label="姓"
+    onChange={[Function]}
+    value="nanashi"
+  />
+  <Styled(LabeledTetBox)
+    label="名"
+    onChange={[Function]}
+    value="gonbe"
+  />
+  <Styled(LabeledRadioButton)
+    label="性別"
+    name="gender"
+    onChange={[Function]}
+    selectItems={
+      Array [
+        Object {
+          "label": "男",
+          "value": "man",
+        },
+        Object {
+          "label": "女",
+          "value": "woman",
+        },
+        Object {
+          "label": "回答しない",
+          "value": "none",
+        },
+      ]
+    }
+    value="man"
+  />
+</div>
+`;
