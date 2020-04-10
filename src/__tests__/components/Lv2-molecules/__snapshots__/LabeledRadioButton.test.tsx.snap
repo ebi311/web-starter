@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LabeledRadioButton success 1`] = `
+<div
+  className="sc-AxiKw dIfukv"
+>
+  <InputLabel>
+    label001
+  </InputLabel>
+  <RadioButton
+    name="name001"
+    onChange={[MockFunction]}
+    selectItems={
+      Array [
+        Object {
+          "label": "r01",
+          "value": "v01",
+        },
+        Object {
+          "label": "r02",
+          "value": "v02",
+        },
+      ]
+    }
+    value="v001"
+  />
+</div>
+`;

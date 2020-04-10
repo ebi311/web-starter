@@ -32,11 +32,12 @@ const RadioButton: React.FC<IProps> = props => {
           name={props.name}
           value={i.value}
           onChange={onChange}
+          checked={props.value === i.value}
         />
         {i.label}
       </label>
     ));
-  }, [props.selectItems]);
+  }, [props.selectItems, props.value]);
   return <Container className={props.className}>{selectItems}</Container>;
 };
 

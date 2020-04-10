@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputLabel success 1`] = `
+<label
+  className="sc-AxjAm ipInQF"
+>
+  <div>
+    hoge
+  </div>
+</label>
+`;
