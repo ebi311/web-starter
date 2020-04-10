@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LabeledTextBox success 1`] = `
+<div
+  className="sc-AxiKw dIfukv"
+>
+  <InputLabel>
+    l001
+  </InputLabel>
+  <TextBox
+    onBlur={[Function]}
+    onChange={[Function]}
+    value="v001"
+  />
+</div>
+`;

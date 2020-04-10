@@ -22,7 +22,7 @@ interface IProps {
 }
 
 // eslint-disable-next-line require-jsdoc
-const LabeledTetBox: React.FC<IProps> = props => {
+const LabeledRadioButton: React.FC<IProps> = props => {
   return (
     <Container className={props.className}>
       <InputLabel>{props.label}</InputLabel>
@@ -36,4 +36,4 @@ const LabeledTetBox: React.FC<IProps> = props => {
   );
 };
 
-export default LabeledTetBox;
+export default LabeledRadioButton;
