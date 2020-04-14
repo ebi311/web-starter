@@ -8,20 +8,26 @@ export const setUser = actionCreator<Partial<IUser>>('set-user');
 
 export const saveUser = actionCreator.async<{}, {}, Error>('save-user');
 
+export const __privet__ = {
+  saveToSessionStorage: (user: IUser) => {
+    sessionStorage.setItem('user', JSON.stringify(user));
+  },
+};
+
 export const save = (user: IUser, dispatch: Dispatch) => {
-  dispatch(saveUser.started);
-  new Promise((resolve, reject) => {
+  dispatch(saveUser.started({}));
+  return new Promise((resolve, reject) => {
     try {
-      // 非同期の保存処理
+      __privet__.saveToSessionStorage(user);
       resolve();
     } catch (e) {
       reject(e);
     }
   })
     .then(() => {
-      dispatch(saveUser.done);
+      dispatch(saveUser.done({ params: {}, result: {} }));
     })
     .catch(e => {
-      dispatch(saveUser.failed(e));
+      dispatch(saveUser.failed({ params: {}, error: e }));
     });
 };

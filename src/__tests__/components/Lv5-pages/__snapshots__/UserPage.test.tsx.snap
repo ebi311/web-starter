@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserPage success 1`] = `
+<styled.div>
+  <UserForm
+    user={
+      Object {
+        "familyName": "nanashi",
+        "gender": "man",
+        "givenName": "gonbe",
+      }
+    }
+  />
+</styled.div>
+`;

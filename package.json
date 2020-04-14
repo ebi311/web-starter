@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
-    "test": "jest"
+    "test": "jest",
+    "test:win": "jest -i"
   },
   "dependencies": {
     "clone": "^2.1.2",
@@ -51,6 +52,7 @@
     "html-webpack-plugin": "^4.0.1",
     "jest": "^25.3.0",
     "jest-styled-components": "^7.0.2",
+    "mock-local-storage": "^1.1.12",
     "prettier": "^2.0.4",
     "rimraf": "^3.0.2",
     "style-loader": "^1.1.3",
