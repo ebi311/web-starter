@@ -34,6 +34,8 @@ Web APP を作成し始めるためのテンプレートです。
 
 ## Usage
 
+ライブラリのインストール: `yarn install`
+
 開発サーバーの起動とビルド: `yarn start`
 
 デバッグ: 開発サーバーを起動した状態で、VS Code の デバッグの "Launch Chrome against localhost"を実行。
