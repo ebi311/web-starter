@@ -21,6 +21,7 @@ plugins:
   - '@typescript-eslint'
   - prettier
 rules:
+  eqeqeq: error
   valid-jsdoc: 0
   react/prop-types: off
   '@typescript-eslint/explicit-function-return-type': off
